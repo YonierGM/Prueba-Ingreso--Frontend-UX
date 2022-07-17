@@ -1,0 +1,187 @@
+.header {
+  /* Layout Properties */
+  width: 100%;
+  height: 475px;
+  /* UI Properties */
+  background: transparent url("../../../../assets/resources/plane.jpg") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+}
+
+.header .header__contenido {
+  /* Layout Properties */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.header .header__contenido .header__contenido__navbar {
+  /* Layout Properties */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70px;
+  /* UI Properties */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+}
+
+.header .header__contenido .header__contenido__navbar .header__contenido__navbar__logo {
+  /* Layout Properties */
+  /* UI Properties */
+  text-align: left;
+  font: normal normal bold 36px/43px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.header .header__contenido .header__contenido__navbar .idioma {
+  /* Layout Properties */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header__contenido .header__contenido__navbar .idioma img {
+  /* Layout Properties */
+  width: 20px;
+}
+
+.header .header__contenido .header__contenido__navbar .header__contenido__navbar__ul {
+  /* Layout Properties */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  /* UI Properties */
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 2%;
+}
+
+.header .header__contenido .header__contenido__navbar .header__contenido__navbar__ul a {
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 18px/22px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header .header__contenido .header__contenido__navbar .header__contenido__navbar__ul a:hover {
+  /* UI Properties */
+  color: #c2696d;
+}
+
+.header .header__contenido .header__contenido__informacion {
+  /* Layout Properties */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header .header__contenido .header__contenido__informacion .header__contenido__informacion__texto {
+  /* Layout Properties */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+}
+
+.header .header__contenido .header__contenido__informacion .header__contenido__informacion__texto .header__contenido__informacion__texto__mostrar {
+  /* Layout Properties */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* UI Properties */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.header .header__contenido .header__contenido__informacion .header__contenido__informacion__texto .header__contenido__informacion__texto__mostrar p {
+  margin: 0;
+}
+
+.header .header__contenido .header__contenido__informacion .header__contenido__informacion__texto .header__contenido__informacion__texto__mostrar .header__contenido__informacion__texto__mostrar__encabezado {
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 30px/37px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.header .header__contenido .header__contenido__informacion .header__contenido__informacion__texto .header__contenido__informacion__texto__mostrar .header__contenido__informacion__texto__mostrar__descripcion {
+  /* Layout Properties */
+  top: 203px;
+  left: 63px;
+  width: auto;
+  height: 44px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 18px/22px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  font-size: 18px;
+}
+
+.header .header__contenido .header__contenido__informacion .header__contenido__informacion__texto .header__contenido__informacion__button .boton__comprar {
+  /* Layout Properties */
+  top: 296px;
+  left: 63px;
+  width: 233px;
+  height: 50px;
+  /* UI Properties */
+  background: #FB3640 0% 0% no-repeat padding-box;
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+  font: normal normal bold 20px/24px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header .header__contenido .header__contenido__informacion .header__contenido__informacion__texto .header__contenido__informacion__button .boton__comprar:hover {
+  /* UI Properties */
+  background-color: #247BA0;
+}
+/*# sourceMappingURL=header.component.css.map */

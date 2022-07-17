@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+/* Fuentes alojadas en el proyecto */
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("assets/Fonts/Roboto-Regular.ttf") format("tuetype");
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body img, body button, body .header__contenido__navbar__logo {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body img:hover {
+  -webkit-filter: saturate(180%);
+          filter: saturate(180%);
+}
+/*# sourceMappingURL=styles.css.map */

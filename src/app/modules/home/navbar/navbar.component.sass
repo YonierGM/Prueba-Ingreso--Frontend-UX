@@ -1,0 +1,112 @@
+* 
+  box-sizing: border-box
+//Espacio de barra navegacion//
+.zona__nav
+    width: 100%
+
+//Barra de navegacion//
+.nav
+  height: 50px
+  width: 90%
+ 
+  position: relative
+  margin: 0
+
+//Primera parte de la barra de navegacion//
+.nav > .nav__header 
+  display: inline
+  width: 90%
+
+//Titulo-logo de la barra de navegacion
+.nav > .nav__header > .nav__title
+  display: inline-block
+  font-size: 22px
+  color: #fff
+  padding: 10px 10px 10px 10px
+  text-align: left
+  font: normal normal bold 36px/43px Roboto
+  letter-spacing: 0px
+  color: #FFFFFF
+  opacity: 1
+
+//Lanzador barra de navegacion dispossitivos pequeños
+.nav > .nav__btn
+  display: none
+
+//Elementos de la barra de navegacion
+.nav > .nav__links 
+  display: inline
+  float: right
+  font-size: 18px
+
+//Estilos de los textos para los elemeentos de la barra de navegacion
+.nav > .nav__links > a
+  display: inline-block
+  padding: 13px 10px 13px 10px
+  text-decoration: none
+  text-align: left
+  font: normal normal normal 18px/22px Roboto
+  letter-spacing: 0px
+  color: #FFFFFF
+  opacity: 1
+
+//Efecto al pasar el cursor sobre los elementos de la barra de navegacion
+.nav > .nav__links > a:hover
+  background-color: rgba(0, 0, 0, 0.3)
+
+//check para activar barra de navegacion (para pequeños tamaños)
+.nav > #nav__check
+  display: none
+
+//Estilos para mostrar en pantallas con tamaño maximo de 768px
+@media (max-width:768px) 
+  .nav > .nav__btn 
+    display: inline-block
+    position: absolute
+    right: 0px
+    top: 0px
+  
+  .nav > .nav__btn > label
+    display: inline-block
+    width: 50px
+    height: 50px
+    padding: 13px
+  
+  .nav > .nav__btn > label:hover,.nav  #nav__check:checked ~ .nav__btn > label
+    background-color: rgba(0, 0, 0, 0.3)
+  
+  .nav > .nav__btn > label > span
+    display: block
+    width: 25px
+    height: 10px
+    border-top: 2px solid #eee
+  
+  .nav > .nav__links 
+    position: absolute
+    display: block
+    width: 100%
+    background-color: #ffffff
+    height: 0px
+    transition: all 0.3s ease-in
+    overflow-y: hidden
+    top: 50px
+    left: 0px
+    z-index: 100
+  
+  .nav > .nav__links > a
+    
+    display: block
+    width: 100%
+    color: #000000
+    text-align: left
+    font: normal normal normal 18px/22px Roboto
+    letter-spacing: 0px
+    opacity: 1
+    text-align: center
+  
+  .nav > #nav__check:not(:checked) ~ .nav__links
+    height: 0px
+  
+  .nav > #nav__check:checked ~ .nav__links 
+    height: calc(100vh - 400px)
+    overflow-y: auto
